@@ -1,0 +1,12 @@
+name = "cf-ai-devops-worker"
+main = "src/index.ts"
+compatibility_date = "2024-11-19"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[vars]
+DEFAULT_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+SYSTEM_PROMPT = "You are an AI pair-programmer that specializes in DevOps automation."
+

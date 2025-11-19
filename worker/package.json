@@ -1,0 +1,18 @@
+{
+  "name": "cf-ai-devops-assistant-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "wrangler deploy --dry-run",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241111.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.91.0"
+  }
+}
+

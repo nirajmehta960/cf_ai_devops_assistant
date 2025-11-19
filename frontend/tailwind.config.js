@@ -4,24 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: "#f5f7ff",
-          100: "#e1e7ff",
-          200: "#c1c9ff",
-          300: "#9ea6ff",
-          400: "#7e83ff",
-          500: "#5b60ff",
-          600: "#3b3dde",
-          700: "#2a2cab",
-          800: "#1b1d73",
-          900: "#0d0f40",
+        cf: {
+          orange: "#F6821F",
+          dark: "#1a1a1a",
+          charcoal: "#121212",
+          graphite: "#1f1f1f",
+          steel: "#2b2b2b",
         },
-        slate: {
-          950: "#05060a",
+        chat: {
+          user: "#1D4ED8",
+          ai: "#2f2f2f",
         },
       },
       boxShadow: {
-        "glow-sm": "0 10px 40px rgba(91, 96, 255, 0.3)",
+        "panel-glow": "0 10px 40px rgba(246, 130, 31, 0.25)",
       },
       animation: {
         "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color: #e1e7ff;
-  background-color: #05060a;
+  color: #f5f5f5;
+  background-color: #1a1a1a;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,11 +15,11 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
-  background-color: #05060a;
+  background-color: #121212;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(91, 96, 255, 0.3), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(91, 96, 255, 0.2), transparent 40%),
-    linear-gradient(135deg, #05060a, #0d0f40 60%);
+    radial-gradient(circle at 15% 20%, rgba(246, 130, 31, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(13, 110, 253, 0.15), transparent 40%),
+    linear-gradient(160deg, #121212 10%, #1a1a1a 55%, #0f0f0f 100%);
 }
 
 #root {

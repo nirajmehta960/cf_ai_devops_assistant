@@ -1,11 +1,25 @@
-name = "cf-ai-devops-worker"
+# Top-level Worker metadata for Wrangler
+name = "cf-devops-assistant"
 main = "src/index.ts"
 compatibility_date = "2024-11-19"
 compatibility_flags = ["nodejs_compat"]
 
+# Cloudflare Workers AI binding (dash binding must match Env interface)
 [ai]
 binding = "AI"
 
+# Durable Object binding for session management
+[durable_objects]
+bindings = [
+  { name = "CHAT_SESSIONS", class_name = "ChatSession" },
+]
+
+# Durable Object migrations ensure classes are created/updated safely
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatSession"]
+
+# Project-level environment variables consumed by the Worker
 [vars]
 DEFAULT_MODEL = "@cf/meta/llama-3.1-8b-instruct"
 SYSTEM_PROMPT = "You are an AI pair-programmer that specializes in DevOps automation."
